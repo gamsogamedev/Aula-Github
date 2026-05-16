@@ -19,13 +19,13 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
-		#animatedSprite.animation = "Run"
+		animatedSprite.animation = "Run"
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		#animatedSprite.animation = "Idle"
+		animatedSprite.animation = "Idle"
 	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
-		#animatedSprite.animation = "Jump"
+		animatedSprite.animation = "Jump"
 
 	move_and_slide()

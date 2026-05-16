@@ -8,3 +8,5 @@
 
 ## Pra quem não baixou o Desktop
 * https://desktop.github.com/download/
+
+* sudo apt install github-desktop
